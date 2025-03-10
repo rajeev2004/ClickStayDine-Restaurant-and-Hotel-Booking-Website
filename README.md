@@ -52,7 +52,7 @@ ClickStayDine is a **restaurant and hotel booking web application** that allows 
     SECRET_KEY=your_jwt_secret
     Admin_Code=your_admin_code
 
-4. Start the backend server:
+4. Start the backend server (ensure the database is set up):
     ```bash
     node server.js
 
