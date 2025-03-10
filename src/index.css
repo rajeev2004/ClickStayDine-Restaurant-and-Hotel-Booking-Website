@@ -1,0 +1,449 @@
+.form{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  animation: tween 0.5s ease-in-out;
+}
+.buttonClass{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  align-items: center;
+}
+input,button,select{
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+input{
+  border: 1px solid black;
+}
+button{
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #0056D2;
+  border: none;
+  color: white;
+}
+input:focus{
+  border: 2px blue solid;
+  outline: none;
+}
+select:focus{
+  border: 2px blue solid;
+  outline: none;
+}
+button:hover{
+  transform: scale(1.1);
+  background-color: #004bb5;
+}
+p{
+  margin: 0;
+  font-size: 18px;
+  word-wrap: break-word;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+@keyframes tween{
+  from{
+      opacity: 0;
+      transform: translateY(+20px);
+  }
+  to{
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+.formComponents{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.formComponents label{
+  width: 80px;
+  text-align: right;
+}
+.formComponents input{
+  flex: 1;
+}
+.formComponents div{
+  flex: 1;
+}
+h2:hover{
+  text-decoration: underline;
+}
+.name{
+  text-align: center;
+  background-color: yellow;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+.userDashboard{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.UserButton{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px 5px;
+}
+.filters{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-start;
+  margin: 10px 5px;
+}
+.userListing{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+}
+.individualListing{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 5px;
+  border: 1px solid black;
+  border-radius: 10px;
+  flex: 1;
+  gap: 10px;
+}
+.listingDetail{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 5px;
+}
+.listingButtons{
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+button:disabled{
+  background-color: transparent; 
+  color: gray; 
+  cursor: not-allowed; 
+  opacity: 0.6;
+}
+.ViewListingImages{
+  position: relative;
+  max-width: 400px;
+  height: auto;
+  margin: auto;
+  display: flex;
+  aspect-ratio: 4/3;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.slide{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+button.prev, button.next{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+.prev{
+  left: 10px;
+}
+.next{
+  right: 10px;
+}
+.ViewListingDetail{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 12px 20px;
+  max-width: fit-content;
+  margin: auto;
+}
+.viewListingDetailContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.units{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+td,th{
+  font-size: 18px;
+  padding: 5px 5px;;
+}
+.viewListingUserButton{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.bookPlaceChild{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.bookListings{
+  margin-top: 20px;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.allUnitCard{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.unitCard{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px 5px;
+  flex: 1 1 200px;
+  max-width: 200px;
+}
+.dashboardButtonContainer{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.bookingForm{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.bookingFormTitle{
+  text-align: left;
+}
+.bookingFormFields{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.bookPlaceButton{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+.bookedUnitContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.bookedUnitContainerChild{
+  display: flex;
+  gap: 10px;
+  border-radius: 10px;
+  padding: 5px 5px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.bookedUnit{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 5px;
+  border: 1px solid black;
+  flex: 1 1 200px;
+  max-width: 200px;
+  padding: 5px 5px;
+  border-radius: 10px;
+}
+.pagination{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.vendorLogout{
+  position: absolute;
+  top: 90px;
+  right: 10px;
+}
+.unitform{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  animation: tween 0.5s ease-in-out;
+}
+.unitAdded{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.vendorUnit{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px 5px;
+  flex: 1 1 200px;
+  max-width: 200px;
+  align-items: center;
+}
+.vendorListingChild{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.individualListing{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-wrap: wrap;
+  max-width: 250px;
+  flex: 1 1;
+}
+.listingDetail{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 5px;
+  align-items: center;
+}
+.listingButtons{
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.vendorButtonPagination{
+  margin: 5px 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+.vendorBookingComponents{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: flex-start;
+}
+.vendorBooking{
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 1 1;
+  border: 1px solid black;
+  padding: 5px 5px;
+  border-radius: 10px;
+  max-width: 250px;
+}
+.vendorBookingChild{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.vendorBookingChild h3{
+  text-decoration: underline;
+}
+.adminDashboardHeader{
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 10px 10px;
+}
+.admin-dashboard{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.metrics{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.adminRow th{
+  text-align: left;
+  border: 1px solid black;
+}
+.adminRow td{
+  border: 1px solid black;
+}
+td{
+  word-wrap: break-word;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+.confirm-dialog{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.adminPaginationButton{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.editUnitComponenet{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.editUnitComponenetChild{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
