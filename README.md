@@ -71,13 +71,13 @@ ClickStayDine is a **restaurant and hotel booking web application** that allows 
     VITE_API_BACKEND=http://localhost:5000
 
 4. Start the frontend development server:
-    ``bash
+    ```bash
     npm run dev
 
 5. Access the application at http://localhost:5173
 
 ## Demo
 
-You can check out the live website [here](https://rajeev2004.github.io/ClickStayDine-Restaurant-and-Hotel-Booking-Website/).
+You can check out the live website [here](https://rajeev2004.github.io/ClickStayDine-Restaurant-and-Hotel-Booking-Website/)
 
 ![ClickStayDine Screenshot](https://raw.githubusercontent.com/rajeev2004/ClickStayDine-Restaurant-and-Hotel-Booking-Website/refs/heads/main/src/assets/Screenshot%202025-03-10%20163902.png?raw=true)
