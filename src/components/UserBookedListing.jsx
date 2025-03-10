@@ -15,7 +15,9 @@ function UserBookedListing(){
             try{
                 const result=await axios.get(`${backend}/getBooking/${localStorage.getItem('user_id')}?page=${page}`);
                 setBookedUnits(result.data.booking);
-                setTotalPage(result.data.totalPage);
+                if(result.data.totalPage!==0){
+                    setTotalPage(result.data.totalPage);
+                }
             }catch(err){
                 setError(err.response?.data?.error || err.message || 'Error while fetching bookings');
             }finally{
